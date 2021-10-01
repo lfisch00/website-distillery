@@ -1,0 +1,74 @@
+/*@media screen and (min-width: 768px)*/
+
+div {
+max-width: 400px;	
+}
+
+.logo {
+position: relative;
+border: 2pt solid blue;
+}
+
+.box {
+	max-width: 400px;
+	position: relative;
+	padding: 4pt;
+	border: 2pt solid green;
+	left: 7rem;
+}
+
+.search {
+	position: relative;
+	max-width: 400px;
+	padding-top: 10pt;
+	padding-left: 10pt;
+	padding-bottom: 10pt;
+	padding-right: 15pt;
+	border: 1pt solid grey;
+	top: 3rem;
+}
+
+.suggest {
+	max-width: 400px;
+	position: relative;
+	padding: 2pt;
+	top: 5rem;
+	border-radius: 25px;
+	border: 2pt solid orange;
+}
+
+.feature {
+	position: relative;
+	padding: 4pt;
+	top: 7rem;
+	border: 2pt solid limegreen;
+}
+
+.feature + .feature {
+	top: 10rem;
+}
+
+.products {
+	max-width: 400px;
+	position: relative;
+	top: 2rem;
+	left: 5rem;
+	bottom: 3rem;
+	padding: 25pt;
+	border: 1pt solid red;
+}
+
+.prices {
+	position: relative;
+	left: 5rem;
+	top: 5rem;
+}
+
+.prices + .prices {
+	position: relative;
+	left: 10rem;
+}
+.prices + .prices + .prices {
+	position: relative;
+	left: 15rem;
+}
