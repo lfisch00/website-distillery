@@ -55,9 +55,7 @@ border: 2pt solid blue;
 
 .search {
 	position: relative;
-	padding-top: 10pt;
-	padding-left: 10pt;
-	padding-bottom: 10pt;
+	padding: 10px 0 10px 10px;
 	padding-right: 15pt;
 	border: 1pt solid grey;
 	top: 3rem;
