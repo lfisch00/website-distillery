@@ -65,7 +65,8 @@ border: 2pt solid blue;
 
 .suggest {
 	position: relative;
-	padding: 2pt;
+	padding: 2px;
+
 	top: 5rem;
 	border-radius: 25px;
 	border: 2pt solid orange;
