@@ -2,7 +2,8 @@
 	.deal2 {
 		height: 400px;
 		display: none;
-		border: 2pt solid black;
+		border: 2px solid black;
+
 	}
 	
 	.dropdown {
