@@ -1,96 +1,101 @@
-@media screen and (max-width: 900px) {
-	.deal2 {
-		height: 400px;
-		display: none;
-		border: 2px solid black;
-
-	}
-	
-	.dropdown {
-		display: none;
-		border: 2pt solid purple;
-	}
-	
-	.content {
-		max-width: 400px;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.suggest {
-		display: none;
-	}
-	.content {
-		max-width: 800px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-/* laptop */
-	
-}
-@media screen and (min-width: 1200px) {
-/* desktop */
-}
-
 body {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-weight: normal;
 }
 
-div {
-max-width: 400px;	
-}
-
 .logo {
 position: relative;
-border: 2pt solid blue;
+border: 2px solid blue;
 }
 
+.deal2 {
+	height: 400px;
+	display: none;
+	border: 2px solid black;
+	}
+
+.box2 {
+	display: none;
+	position: relative;
+	padding: 4px;
+	border: 2px solid green;
+	left: 7rem;
+}
 .box {
 	position: relative;
 	padding: 4px;
-
 	border: 2px solid green;
-
 	left: 7rem;
+}
+
+.dropdown {
+	display: none;
+	border: 2px solid purple;
 }
 
 .search {
 	position: relative;
-	padding: 10px 0 10px 10px;
-	padding-right: 15pt;
-	border: 1pt solid grey;
+	padding: 10px 310px 10px 10px;
+	border: 1px solid grey;
 	top: 3rem;
+}
+
+.search2 {
+	display:none;
+	padding: 10px 0px 10px 10px;
+	border: 2px solid purple;
+	top: 3rem;
+}
+
+nav {
+ 	display: none;
+	border: 2px solid red;
+	align-content: center;
+	position: relative;
+	padding: 10px 0 10px 10px;
+	top: 5rem;
 }
 
 .suggest {
 	position: relative;
 	padding: 2px;
-
 	top: 5rem;
 	border-radius: 25px;
-	border: 2pt solid orange;
+	border: 2px solid orange;
 }
 
 .feature {
 	position: relative;
-	padding: 4pt;
+	padding: 4px;
 	top: 7rem;
-	border: 2pt solid limegreen;
+	border: 2px solid limegreen;
 }
 
 .feature + .feature {
 	top: 10rem;
 }
 
+.seasonal {
+	display: none;
+	position: relative;
+	padding: 1px;
+	top: 7rem;
+	border: 2px solid aqua;
+}
+
+
 .products {
 	position: relative;
 	top: 2rem;
 	left: 5rem;
 	bottom: 3rem;
-	padding: 25pt;
-	border: 1pt solid red;
+	padding: 25px;
+	border: 1px solid red;
+}
+
+.products2 {
+	display: none;
+	border: 1px solid red;
 }
 
 .prices {
@@ -106,4 +111,122 @@ border: 2pt solid blue;
 .prices + .prices + .prices {
 	position: relative;
 	left: 15rem;
+}
+
+
+@media screen and (max-width: 900px) {
+/*filler*/
+}
+
+@media screen and (min-width: 768px) {
+	.suggest {
+		display: none;
+	}
+	.content {
+		max-width: 800px;
+	}
+		nav {
+		display: block;
+	}
+	
+	.dropdown {
+		display: inline;
+		border: 2px solid purple;
+	}
+	
+	.search {
+		padding: 10px 700px 10px 10px;
+	}
+	
+	.search2 {
+		display: none;
+	}
+			
+	.box2 {
+		display: inline;
+	}
+	
+	.feature {
+		display: flex;
+		flex: wrap;
+		flex-direction: row;
+		width: 100%;
+	}
+	
+	.deal {
+		display: flex;
+		order: 1;
+		width: 50%;
+	}
+	
+	.deal2 {
+		display: flex;
+		order: 2;
+		width: 50%;
+	}
+	
+	.products {
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		top: 20rem;
+		left: -15rem;
+		padding: 40px;
+		align-content: left;
+	}
+	
+	.products2 {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		top: 20rem;
+		left: -15rem;
+		padding: 40px;
+		align-content: left;
+	}
+	
+	.prices {
+		position: relative;
+		top: 30rem;
+		left: -45rem;
+	}
+	
+	.prices + .prices {
+		position: relative;
+		top: 30rem;
+		left: -55rem;
+	}
+	
+	.prices + .prices + .prices {
+		position: relative;
+		top: 30rem;
+		left: -65rem;
+	}
+	
+	.seasonal {
+	display: block;
+	position: relative;
+	padding: 1px;
+	top: 10rem;
+	border: 2px solid aqua;
+}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	.search {
+		display: initial;
+	}
+	
+}
+@media screen and (min-width: 1200px) {
+		.search {
+		display: normal;
+	}
+	
+	.search2 {
+		display: initial;
+		position: relative;
+		top: 3rem;
+	}
 }
